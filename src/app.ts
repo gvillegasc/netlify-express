@@ -18,7 +18,7 @@ app.get("/api", (req: Request, res: Response) => {
   res.send("Welcome to the api :)");
 });
 
-app.get("*", (req: Request, res: Response) => {
+app.get("/", (req: Request, res: Response) => {
   res.sendFile(path.resolve(__dirname, "public/index.html"));
 });
 
